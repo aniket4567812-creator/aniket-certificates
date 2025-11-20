@@ -1,1 +1,134 @@
-Certificates working!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aniket Chaudhary — Portfolio</title>
+
+  <style>
+    body{
+      margin:0;
+      background:#071025;
+      font-family:Inter, Arial;
+      color:white;
+    }
+    .container{width:92%;margin:auto;padding:20px;}
+
+    /* Certificates Grid */
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:20px;
+    }
+    .cert-card{
+      background:rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:12px;
+      cursor:pointer;
+      box-shadow:0 8px 30px rgba(0,0,0,0.5);
+      transition:0.2s;
+    }
+    .cert-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 20px 60px rgba(0,0,0,0.6);
+    }
+    .cert-card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:8px;
+      background:#000;
+    }
+    .label{
+      margin-top:8px;
+      font-weight:700;
+      color:#fff;
+      font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2 style="font-size:26px;margin-bottom:6px">Certificates</h2>
+  <p style="color:#9aa4b2">Click any certificate – it will open in the SAME TAB.</p>
+
+  <div class="cert-grid">
+
+    <!-- CYBER SECURITY -->
+    <div class="cert-card" onclick="openCert('cyber_cert.pdf')">
+      <img src="cyber_thumb.jpg">
+      <div class="label">Cyber Security Certificate</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Completed government-led cyber security awareness quiz with distinction.
+      </div>
+    </div>
+
+    <!-- RASHTRIYA EKTA -->
+    <div class="cert-card" onclick="openCert('rashtiya_cert.pdf')">
+      <img src="rashtiya_thumb.jpg">
+      <div class="label">Rashtriya Ekta / Jagrukta Certificate</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Recognized for participating in the Rashtriya Ekta & awareness program.
+      </div>
+    </div>
+
+    <!-- SOFTWARE ENGINEERING 1 -->
+    <div class="cert-card" onclick="openCert('aws.pdf')">
+      <img src="aws_thumb.jpg">
+      <div class="label">AWS Software Engineering Certificate</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Earned certification for real-world coding simulations and project execution.
+      </div>
+    </div>
+
+    <!-- SOFTWARE ENGINEERING 2 -->
+    <div class="cert-card" onclick="openCert('sf_eng_certification.pdf')">
+      <img src="soft_thumb.jpg">
+      <div class="label">Software Engineering Simulation</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Earned certification for real-world coding simulations and project execution.
+      </div>
+    </div>
+
+    <!-- SOFTWARE ENGINEERING 3 -->
+    <div class="cert-card" onclick="openCert('copilot_for_startups.pdf')">
+      <img src="copilot_thumb.jpg">
+      <div class="label">Copilot For Startups</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Earned certification for real-world coding simulations and project execution.
+      </div>
+    </div>
+
+    <!-- EXTRA CERTIFICATE A -->
+    <div class="cert-card" onclick="openCert('certA.pdf')">
+      <img src="thumbA.jpg">
+      <div class="label">Certificate A</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Earned certification for real-world coding simulations and project execution.
+      </div>
+    </div>
+
+    <!-- EXTRA CERTIFICATE B -->
+    <div class="cert-card" onclick="openCert('certB.pdf')">
+      <img src="thumbB.jpg">
+      <div class="label">Certificate B</div>
+      <div class="label" style="color:#9aa4b2;font-weight:400;">
+        Earned certification for real-world coding simulations and project execution.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openCert(path){
+  window.open(path, "_self"); 
+}
+</script>
+
+</body>
+</html>
+
